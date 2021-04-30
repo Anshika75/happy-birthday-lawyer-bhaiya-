@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    </head>
+    <body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    font-size:16px;
+}
+
+:root {
+    --blue: #1e90ff;
+    --crd: #ffffff;
+    --crd1:red;
+    --crd2:pink;
+    --crd3:blue;
+    --crd4:yellow;
+}
+
+body{
+    background-color:transparent;
+}
+main{
+    height:100vh;
+    width:100vw;
+    background-image:url("https://cdn.pixabay.com/photo/2016/11/18/15/47/card-1835447__480.jpg");
+    background-size:100% 100%;
+    /*background-color:hotpink;   */
+}
+.bg{
+    position:fixed;
+    top:0;
+    left:0;
+    height:100vh;
+    width:100vw;
+    animation:animate 3s 3s linear both;
+}
+.card{
+    height:90vh;
+    width:90vw;
+    background-color:var(--crd1);
+    position:absolute;
+    top:5vh;
+    left:5vw;
+    box-shadow:0 0 1vmin 1vmin #fff1;
+    overflow:hidden;
+    border-radius:1rem;
+}
+
+.button{
+    position:absolute;
+    height:120px;
+    width:120px;
+    background-color:#28678A;
+    left:50%;
+    bottom:3%;
+    transform:translate(-50%, -5%);
+    background-image:url("https://blush.design/api/download?shareUri=PG3VFHqoF&w=800&h=800&fm=png");
+    background-size:100% 100%; 
+    border-radius:2rem;
+    box-shadow:0 0 1vmin 1vmin #fff4;
+}
+
+.card1{
+    z-index:10;
+    background-color:green;
+    transform-origin:right;
+    width:90vw;
+    background:linear-gradient(45deg, #C6C5C2, #AFC8CF);
+    padding:5px;
+}
+
+h1{
+    text-align:center;
+    margin-top:15px;
+    font-family:"Dela Gothic One";
+    font-size:2.5rem;
+    background: linear-gradient(45deg, #28678A, #0D2A3C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow:0 .2rem .2rem #0005; 
+}
+
+
+p{
+    font-family:"Fredoka One";
+    font-weight:200;
+    text-align:center;
+    margin-top:20px;
+    
+}
+cite{
+    font-family:"Times New Roman";
+    font-family:900;
+    text-align:center;
+}
+@keyframes animate{
+    from{
+        opacity:0;
+    }
+}
+
+.card2{
+    z-index:9;
+    background:linear-gradient(45deg, #AA9F95, #C6C8C6);
+    padding:5px;
+}
+
+.bt2{
+    background-image:url("https://blush.design/api/download?shareUri=-3zLJMmER&w=800&h=800&fm=png");
+}
+.bt3{
+    background-image:url("https://blush.design/api/download?shareUri=vU-hNppT0&w=800&h=800&fm=png");
+}
+
+.card3{
+    z-index:8;
+    padding:5px;
+    background:linear-gradient(45deg, #C6C5C2, #AA9F95);
+}
+
+
+.card4{
+    z-index:6;
+    padding:5px;
+    background:linear-gradient(45deg, #AFC8CF, #AA9F95);
+}
+
+.box{
+    height:50%;
+    position:absolute;
+    width:90%;
+    top:47%;
+    left:50%;
+    transform:translate(-50%, -58%);
+}
+
+
+.plate{
+    height:3%;
+    width:90%;
+    position:absolute;
+    background-color:gray;
+    left:50%;
+    bottom:3%;
+    transform:translateX(-50%);
+}
+.layer1{
+    height:30%;
+    width:90%;
+    position:absolute;
+    background-color:#462C10;
+    left:50%;
+    bottom:6%;
+    transform:translateX(-50%);
+    border-radius:1rem 1rem 0 0;
+    overflow:hidden ;
+}
+.sublayer{
+    position:absolute;
+    width:100%;
+    border-radius:0 0 20rem 20rem;
+    height:70%;
+    background-color:#eee7;
+}
+.layer2{
+    height:30%;
+    width:80%;
+    position:absolute;
+    background-color:#664522;
+    left:50%;
+    bottom:36%;
+    transform:translateX(-50%);
+    border-radius:1rem 1rem 0 0;
+    overflow:hidden;
+}
+.candle{
+    height:15%;
+    width:5%;
+    position:absolute;
+    background-color:#E1BFFE;
+    left:50%;
+    bottom:66%;
+    transform:translateX(-50%);
+}
+.flame{
+    height:10%;
+    width:5%;
+    position:absolute;
+    background-color:orange;
+    left:50%;
+    bottom:81%;
+    transform:translateX(-50%);
+    border-radius:50%;
+}
+.bt4{
+    background-image:url("https://blush.design/api/download?shareUri=-a_YwN85t&w=800&h=800&fm=png");
+}
+
+.layer1, .layer2, .plate{
+    box-shadow:0 0 1vmin 1vmin #0002;
+}
+
+.candle{
+    box-shadow:0 0 .5vmin .5vmin #0002;
+}
+
+.flame{
+    box-shadow:0 0 .7vmin .7vmin #ff03;
+}
+
+.card5{
+    background-image:url("https://api.sololearn.com/Uploads/Avatars/14022015.jpg");
+    background-size:100% 100%;
+    z-index:2;
+    animation:pfp 2s alternate-reverse both infinite;
+}
+
+.card4 cite{
+     position:absolute;
+     bottom:25%;
+     margin-top:100px;
+}
+
+@keyframes pfp{
+    0%{
+        filter: hue-rotate(0deg) ;
+    }
+    4%{
+        filter: hue-rotate(10deg) ;
+    }
+    8%{
+        filter: hue-rotate(20deg) ;
+    }
+    12%{
+        filter: hue-rotate(30deg) ;
+    }
+    16%{
+        filter: hue-rotate(40deg) ;
+    }
+    20%{
+        filter: hue-rotate(50deg) ;
+    }
+    24%{
+        filter: hue-rotate(60deg) ;
+    }
+    28%{
+        filter: hue-rotate(70deg) ;
+    }
+    32%{
+        filter: hue-rotate(80deg) ;
+    }
+    36%{
+        filter: hue-rotate(90deg) ;
+    }
+    40%{
+        filter: hue-rotate(100deg) ;
+    }
+    44%{
+        filter: hue-rotate(110deg) ;
+    }
+    48%{
+        filter: hue-rotate(115deg) ;
+    }
+    52%{
+        filter: hue-rotate(120deg) ;
+    }
+    56%{
+        filter: hue-rotate(130deg) ;
+    }
+    60%{
+        filter: hue-rotate(140deg) ;
+    }
+    64%{
+        filter: hue-rotate(150deg) ;
+    }
+    68%{
+        filter: hue-rotate(160deg) ;
+    }
+    72%{
+        filter: hue-rotate(170deg) ;
+    }
+    76%{
+        filter: hue-rotate(180deg) ;
+    }
+    80%{
+        filter: hue-rotate(200deg) ;
+    }
+    84%{
+        filter: hue-rotate(210deg) ;
+    }
+    88%{
+        filter: hue-rotate(230deg) ;
+    }
+    92%{
+        filter: hue-rotate(250deg) ;
+    }
+    96%{
+        filter: hue-rotate(270deg) ;
+    }
+    100%{
+        filter: hue-rotate(300deg) ;
+    }
+    
+}
+    </style>
+    <audio controls style=" display:none;" loop   id="a"  >
+ <source id="audio" src="https://www.dropbox.com/s/ysbyjqwm2r2a6hp/Shaam_Shaandaar__Shaandaar__Shahid_Kapoor_%26_Alia_Bhatt__Amit_Trivedi%28256k%29?dl=1">
+    <script>
+     Swal.fire('Happy birthday Lawyer Bhaiya🎊\n A small try🧗‍♀️ to express my gratitude🤗 \n It is quite simple😕 and boring😥 as I am a beginner😔  Sorry bhaiya due to few issues couldnt make it to your bday but aakr party wasooloongi 😁 ')
+        </script>  
+      </audio> 
+        <main>
+            <div class="bg">
+            <div class="card card1" id="card1">
+                <h1 id="hbd1">HAPPY BIRTHDAY</h1>
+                <p id="p1">
+                Janamdin🎂 ki to party🍽 honi chaahiye
+Wish to morning🌅 ki bhi hoti hai🤨<br><br>
+                    Toh kya laga tha aapko, bhul jaungi 🤨, na main maggi, chocolate and ice cream churane ka mauka itni aasani se nhi jane deti😏 so 99% of cake toh waise hi mera hai 🤔🤔 baaki maggi, chocolate and ice cream ka hisab aa kr kr loongi🤨😁 , so dont forget to save my part of party🤨😤 till then enjoy your birthday 🥳<br><br> <cite>(Click on the cake button)</cite>
+                </p>
+                
+                <div class="button" id="bt1" onclick="card1()"></div>
+            </div>
+           
+           
+            <div class="card card2" id="card2">
+             <h1 id="hbd2">Wishes Time</h1>
+             <p id="p2">Birthday hai toh wishes toh banti hi hai😌<br><br>
+             <cite>My fondest wishes are for you,<br>
+Since today's your special day,<br>
+May every dream you chase,<br>
+Come true and never stray.<br>
+
+You are so special to me,<br>
+You deserve the best of all,<br>
+May your birthday be ageless,<br>
+May you know joy big and small.<br>
+Wishing you the best,<br>
+Day in and day out,<br>
+May you find great joy,<br>
+May you twist and shout.<br>
+<br>(Click the button for next page)
+
+
+
+</cite>
+             </p>
+              <div class="button bt2" id="bt2" onclick="card2()"></div>  
+            </div>
+            
+            <div class="card card3" id="card3">
+            <h1 id="hbd3">Thank You Time</h1>
+            <p id="p3">Ummm i know hum zada time se ek dusre ko nhi jante but still bhaiya you have influced me in a very positive way. I truly appreciate your kindness and thoughtfulness in more than words can say and infinite times admire the aura of positivity that you spread.<br>
+                May all your wishes comes true🤗 and you have a never ending smile😊 on your face forever 🤞
+Wishing you a year filled with happiness🤗 joy😄 and prosperity😇 and yeah lots of maggi🍝 chocolate🍫 and ice cream🍦 too 🥳<br>
+<cite>(Click on the button for the pawri)</cite>
+            </p>
+            
+              <div class="button bt3" id="bt3" onclick="card3()"></div>  
+            </div>
+            <div class="card card4" id="card4">
+            <h1>Pawri Time</h1>
+            <p id="p4">99% mera hai baaki aap sb ka😁😁😌😌</p>
+            <div class="box" id="box">
+                <div class="plate"></div>
+                <div class="layer1">
+                    <div class="sublayer"></div>
+                </div>
+                <div class="layer2">
+                    <div class="sublayer"></div>
+                </div>
+                <div class="candle"></div>
+                <div class="flame"></div>
+            </div>
+            <cite id="c">(Click on the button to know who's birthday is today)</cite>
+                <div class="button bt4" id="bt4" onclick="card4()"></div>
+            </div>
+            <div class="card card5"></div>
+            </div>
+        </main>
+        <script>
+            function card1(){
+    var card1 = document.getElementById('card1');
+    var hbd1 = document.getElementById('hbd1');
+    var p1 = document.getElementById('p1');
+    var bt1= document.getElementById('bt1');
+    card1.style.width="1vw";
+    card1.style.left="94vw";
+    card1.style.transition="2s linear";
+    p1.style.transition="2s linear";
+    hbd1.style.transition="2s linear";
+    p1.style.opacity="0";    
+    hbd1.style.opacity="0";
+    bt1.style.transition="2s linear";
+    bt1.style.opacity="0";
+}
+
+function card2(){
+    var card1 = document.getElementById('card2');
+    var hbd2 = document.getElementById('hbd2');
+    var p2 = document.getElementById('p2');
+    var bt1= document.getElementById('bt2');
+    card1.style.height="1vh";
+    //card1.style.left="94vw";
+    card1.style.transition="2s linear";
+    p1.style.transition="2s linear";
+    hbd1.style.transition="2s linear";
+    p1.style.opacity="0";
+    hbd1.style.opacity="0";
+    bt1.style.transition="2s linear";
+    bt1.style.opacity="0";
+}
+
+function card3(){
+    var card1 = document.getElementById('card3');
+    var hbd1 = document.getElementById('hbd3');
+    var p1 = document.getElementById('p3');
+    var bt1= document.getElementById('bt3');
+    card1.style.height="1vh";
+    card1.style.top="94vh";
+    card1.style.transition="2s linear";
+    p1.style.transition="2s linear";
+    hbd1.style.transition="2s linear";
+    p1.style.opacity="0";
+    hbd1.style.opacity="0";
+    bt1.style.transition="2s linear";
+    bt1.style.opacity="0";
+}
+
+function card4(){
+    var card1 = document.getElementById('card4');
+    var box = document.getElementById('box');
+    var bt1= document.getElementById('bt4');
+    var p1 = document.getElementById('p4');
+    var c = document.getElementById('c');
+    card1.style.width="1vw";
+    card1.style.transition="2s linear";
+    box.style.transition="2s linear";
+    bt1.style.transition="2s linear";
+    bt1.style.opacity="0";
+    box.style.opacity="0";
+    p1.style.transition="2s linear";
+    p1.style.opacity="0";
+    c.style.transition="2s linear";
+    c.style.opacity="0";
+}
+window.addEventListener("mouseover",play);
+window.addEventListener("click",play);
+function play() { document.getElementById("a").play();
+}
+        </script>
+    </body>
+</html>
